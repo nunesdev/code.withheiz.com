@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "title": "Bruno Nunes",
+    "description": "Software Engineer — Data Science, Machine Learning & creative technology."
+  },
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "resume": "Resume",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "home": {
+    "name": "Bruno Nunes",
+    "bio": "Software Engineer with 15 years of experience, currently focusing on Data Science, Machine Learning and creative technology projects that combine data and visual storytelling.",
+    "projectsHeading": "Selected Projects in Data Science & Machine Learning",
+    "viewProject": "View project",
+    "projectVisualAlt": "Project visual"
+  },
+  "footer": {
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "email": "Email"
+  },
+  "placeholders": {
+    "comingSoon": "Coming soon."
+  },
+  "resume": {
+    "downloadPdf": "Download PDF",
+    "sectionNavLabel": "Resume navigation",
+    "experienceTechLabel": "Tech",
+    "profile": {
+      "name": "Bruno Reis",
+      "role": "Software Engineer & Data Science Student",
+      "location": "Palmas - TO, Brazil",
+      "photoAlt": "Bruno Reis"
+    },
+    "sectionsNav": {
+      "overview": { "index": "01", "title": "Overview" },
+      "experience": { "index": "02", "title": "Experience" },
+      "education": { "index": "03", "title": "Education" },
+      "certifications": { "index": "04", "title": "Certifications" }
+    },
+    "overview": {
+      "title": "Overview",
+      "body": "Software Engineer with over 15 years of experience. I have built and scaled high-availability systems, from modernizing monoliths to distributed ecosystems. Today, I focus on merging traditional engineering with Data Science and AI (Cursor, Claude) to build faster, smarter products.",
+      "stats": [
+        { "value": "15+", "label": "Years Experience" },
+        { "value": "10", "label": "Companies" }
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "showMore": "Show other companies",
+      "showLess": "Show less",
+      "defaultVisibleCount": 5,
+      "items": [
+        {
+          "id": "wa",
+          "company": "WA.Technology",
+          "modality": "Remote",
+          "role": "Senior Software Engineering Consultant",
+          "period": "Mar 2024 – Present",
+          "duration": "2 yrs 9 mos",
+          "highlights": [
+            "Accelerated deployment workflows and reduced Code Review bounce-back rates via AI-assisted development (Cursor/Claude).",
+            "Maintained and refactored a legacy monolithic system (PHP) using Docker, introducing Clean Architecture principles."
+          ],
+          "tech": ["PHP", "React", "Vanilla JS", "MySQL", "Docker", "Clean Architecture", "Jenkins"]
+        },
+        {
+          "id": "natixis",
+          "company": "Natixis / Aubay",
+          "modality": "Remote/Portugal",
+          "role": "Full Stack Developer",
+          "period": "Nov 2021 – Mar 2024",
+          "duration": "2 yrs 5 mos",
+          "highlights": [
+            "Focused on backend development to build, scale, and maintain internal HR systems.",
+            "Created custom WordPress themes/plugins and developed RESTful APIs using Laravel.",
+            "Optimized database structures via complex MySQL stored procedures."
+          ],
+          "tech": ["PHP", "WordPress", "Laravel", "Vanilla JS", "Webpack", "Sass", "jQuery", "MySQL", "Scrum"]
+        },
+        {
+          "id": "empiricus",
+          "company": "Empiricus",
+          "modality": "Brazil",
+          "role": "Full Stack Developer",
+          "period": "Jun 2017 – Jul 2021",
+          "duration": "4 yrs 2 mos",
+          "highlights": [
+            "Led the zero-to-one architecture of a proprietary Laravel/Multi-tenant CMS (on Kubernetes) replacing WordPress.",
+            "Ensured top frontend performance with Vue.js/Nuxt.js to handle massive simultaneous traffic spikes during market openings."
+          ],
+          "tech": ["PHP", "Laravel", "Vue.js", "Nuxt.js", "Kubernetes", "AWS", "ElasticSearch", "MongoDB", "Redis"]
+        },
+        {
+          "id": "uol",
+          "company": "UOL - Universo Online",
+          "modality": "Brazil",
+          "role": "Full Stack Developer",
+          "period": "Dec 2016 – Jun 2017",
+          "duration": "7 mos",
+          "highlights": [
+            "Editorial maintenance team. Troubleshooter ensuring 24/7 uptime for editorial publishing."
+          ],
+          "tech": ["AngularJS", "HTML", "CSS", "jQuery"]
+        },
+        {
+          "id": "upwell",
+          "company": "Upwell",
+          "modality": "Freelance",
+          "role": "Senior System Analyst / Tech Lead",
+          "period": "Jul 2016 – Nov 2016",
+          "duration": "5 mos",
+          "highlights": [
+            "Led UX and backend development for a medical app.",
+            "Organized Agile/Scrum ceremonies."
+          ],
+          "tech": ["Lumen", "MongoDB", "Socket.io", "Node.js", "ElasticSearch", "Scrum"]
+        },
+        {
+          "id": "digitalbox",
+          "company": "DigitalBox",
+          "modality": "",
+          "role": "Full Stack Developer",
+          "period": "Jan 2015 – Apr 2016",
+          "duration": "1 yr 4 mos",
+          "highlights": [
+            "Maintained legacy projects and created new backends."
+          ],
+          "tech": ["PHP", "jQuery", "Gulp", "HTML", "CSS"]
+        },
+        {
+          "id": "alicewonders",
+          "company": "AliceWonders",
+          "modality": "",
+          "role": "Developer",
+          "period": "Feb 2014 – Dec 2014",
+          "duration": "11 mos",
+          "highlights": [
+            "Created smart digital solutions and hybrid mobile apps."
+          ],
+          "tech": ["JavaScript", "Apache Cordova", "jQuery Mobile", "PHP"]
+        },
+        {
+          "id": "lov-dentsu",
+          "company": "LOV - Dentsu",
+          "modality": "",
+          "role": "PHP Programmer",
+          "period": "Nov 2012 – Feb 2014",
+          "duration": "1 yr 4 mos",
+          "highlights": [
+            "Developed administrative systems, BI reports, and landing pages."
+          ],
+          "tech": ["PHP", "MySQL (Procedures/Events)", "Ajax", "JavaScript"]
+        },
+        {
+          "id": "planet-off",
+          "company": "Planet Off",
+          "modality": "",
+          "role": "PHP Programmer",
+          "period": "Jan 2012 – Aug 2012",
+          "duration": "8 mos",
+          "highlights": [
+            "Social network for discount coupons."
+          ],
+          "tech": ["PHP", "MySQL", "JavaScript", "HTML"]
+        },
+        {
+          "id": "noweb",
+          "company": "Noweb Publicidade",
+          "modality": "",
+          "role": "Web Developer",
+          "period": "Jan 2011 – Jan 2012",
+          "duration": "1 yr 1 mo",
+          "highlights": [],
+          "tech": ["PHP", "HTML", "CSS", "JavaScript"]
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "items": [
+        {
+          "id": "infnet",
+          "institution": "Instituto INFNET",
+          "degree": "Bachelor's in Data Science & AI/ML",
+          "period": "Jan 2025 – Present",
+          "highlights": [
+            "AI & Machine Learning: In-depth study of ML algorithms, focusing on the architecture and implementation of predictive models. Supervised Learning (Classification) and Clustering.",
+            "Data Engineering with Python (Pandas, Scikit-Learn), advanced SQL queries (PostgreSQL), and Exploratory Data Analysis (EDA) for strategic insights.",
+            "Data-Driven Apps (building interactive frontends with Streamlit), Prompt Engineering, AI Model Life Cycle, and LangChain."
+          ]
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certifications",
+      "items": [
+        { "id": "r-2025", "name": "Data Science with R", "year": "2025" },
+        { "id": "devops-2024", "name": "DevOps — CI/CD Approach", "year": "2024" },
+        { "id": "ml-python-2021", "name": "Machine Learning & Data Science with Python", "year": "2021" },
+        { "id": "stats-2021", "name": "Statistics for Data Science & Machine Learning", "year": "2021" }
+      ]
+    }
+  },
+  "contact": {
+    "pageTitle": "Contact",
+    "contactInfo": {
+      "title": "Contact Information",
+      "emailLabel": "Email",
+      "locationLabel": "Location",
+      "remoteLabel": "Remote",
+      "timezoneLabel": "Timezone",
+      "email": "hello@withheiz.com",
+      "location": "Palmas, TO, Brazil",
+      "remote": "Remote Work Available",
+      "timezone": "GMT-3 Timezone"
+    },
+    "socialProfiles": {
+      "title": "Social Profiles",
+      "items": [
+        {
+          "id": "linkedin",
+          "label": "LinkedIn",
+          "href": "https://www.linkedin.com/in/brunodev/"
+        },
+        {
+          "id": "github",
+          "label": "GitHub",
+          "href": "https://github.com/nunesdev"
+        },
+        {
+          "id": "instagram",
+          "label": "Instagram",
+          "href": "https://www.instagram.com/withheiz/"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to collaborate?",
+      "text": "I'm always open to discussing new opportunities, interesting projects, or just having a good chat about technology.",
+      "button": "Send me an email",
+      "email": "hello@withheiz.com"
+    }
+  }
+}

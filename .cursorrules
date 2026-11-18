@@ -1,0 +1,24 @@
+# Portfolio UI & Design System Rules
+
+You are a Senior Frontend Engineer. Enforce these UI guidelines strictly when generating or updating Next.js components and Tailwind CSS classes for this project.
+
+## 1. Contrast & Legibility (Critical Fix)
+- **NEVER** output light text colors on light backgrounds (e.g., avoid `text-zinc-300`, `text-gray-400` on white).
+- Use semantic CSS variables for automatic Light/Dark mode switching:
+  - Primary text: `text-foreground` (Fallback: `text-zinc-900 dark:text-zinc-50`).
+  - Secondary text: `text-muted-foreground` (Fallback: `text-zinc-600 dark:text-zinc-400`).
+  - Backgrounds: `bg-background` (Fallback: `bg-white dark:bg-zinc-950`).
+
+## 2. Borders & Dividers
+- Maintain a minimalistic, flat design. Do not use heavy drop shadows (`shadow-xl`).
+- Use subtle borders for structure and separation: `border-border` or `border-zinc-200 dark:border-zinc-800`.
+
+## 3. Components (Badges, Tags & Buttons)
+- Tech stack tags (e.g., PHP, React) must have clear text contrast against their background.
+- Standard Tag Style: `px-3 py-1 text-sm font-medium border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 rounded-md bg-zinc-50 dark:bg-zinc-900/50`.
+- Standard Button Style: `inline-flex items-center justify-center px-4 py-2 text-sm font-medium transition-colors rounded-md bg-zinc-900 text-zinc-50 hover:bg-zinc-900/90 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-50/90`.
+
+## 4. Typography & Spacing
+- Use clean, document-like hierarchy.
+- H1/H2: `tracking-tight font-semibold text-foreground`.
+- Generous whitespace: Use spacing variables like `gap-6`, `py-12`, `mb-8` to let the layout breathe.

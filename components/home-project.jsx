@@ -1,0 +1,1 @@
+export { ProjectCard as HomeProject } from "@/components/project/project-card";

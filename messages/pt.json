@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "title": "Bruno Nunes",
+    "description": "Engenheiro de Software — Ciência de Dados, Machine Learning e tecnologia criativa."
+  },
+  "nav": {
+    "home": "Início",
+    "projects": "Projetos",
+    "resume": "Currículo",
+    "blog": "Blog",
+    "contact": "Contato"
+  },
+  "home": {
+    "name": "Bruno Nunes",
+    "bio": "Engenheiro de Software com 15 anos de experiência, atualmente focado em Ciência de Dados, Machine Learning e projetos de tecnologia criativa que combinam dados e narrativa visual.",
+    "projectsHeading": "Projetos selecionados em Ciência de Dados & Machine Learning",
+    "viewProject": "Ver projeto",
+    "projectVisualAlt": "Visual do projeto"
+  },
+  "footer": {
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "email": "E-mail"
+  },
+  "placeholders": {
+    "comingSoon": "Em breve."
+  },
+  "resume": {
+    "downloadPdf": "Baixar PDF",
+    "sectionNavLabel": "Navegação do currículo",
+    "experienceTechLabel": "Tech",
+    "profile": {
+      "name": "Bruno Reis",
+      "role": "Software Engineer & Data Science Student",
+      "location": "Palmas - TO, Brasil",
+      "photoAlt": "Bruno Reis"
+    },
+    "sectionsNav": {
+      "overview": { "index": "01", "title": "Visão Geral" },
+      "experience": { "index": "02", "title": "Experiência" },
+      "education": { "index": "03", "title": "Formação" },
+      "certifications": { "index": "04", "title": "Certificações" }
+    },
+    "overview": {
+      "title": "Visão Geral",
+      "body": "Engenheiro de Software com mais de 15 anos de estrada. Construí e escalei sistemas de alta disponibilidade, da modernização de monolitos até ecossistemas distribuídos. Hoje, foco em unir a engenharia tradicional com Ciência de Dados e Inteligência Artificial (Cursor, Claude) para criar produtos mais rápidos e inteligentes.",
+      "stats": [
+        { "value": "15+", "label": "Anos de Experiência" },
+        { "value": "10", "label": "Empresas" }
+      ]
+    },
+    "experience": {
+      "title": "Experiência",
+      "showMore": "Mostrar outras empresas",
+      "showLess": "Mostrar menos",
+      "defaultVisibleCount": 5,
+      "items": [
+        {
+          "id": "wa",
+          "company": "WA.Technology",
+          "modality": "Remoto",
+          "role": "Senior Software Engineering Consultant",
+          "period": "Mar 2024 – Presente",
+          "duration": "2 anos e 9 meses",
+          "highlights": [
+            "Acelerei o fluxo de deploy e reduzi a taxa de retrabalho em Code Reviews adotando IA (Cursor/Claude).",
+            "Refatorei um sistema monolítico legado (PHP) via Docker, introduzindo Clean Architecture."
+          ],
+          "tech": ["PHP", "React", "Vanilla JS", "MySQL", "Docker", "Clean Architecture", "Jenkins"]
+        },
+        {
+          "id": "natixis",
+          "company": "Natixis / Aubay",
+          "modality": "Remoto/Portugal",
+          "role": "Full Stack Developer",
+          "period": "Nov 2021 – Mar 2024",
+          "duration": "2 anos e 5 meses",
+          "highlights": [
+            "Foco no desenvolvimento backend para sustentar sistemas internos de RH.",
+            "Criação de temas/plugins WordPress e desenvolvimento de APIs RESTful (Laravel).",
+            "Otimização via procedures MySQL."
+          ],
+          "tech": ["PHP", "WordPress", "Laravel", "Vanilla JS", "Webpack", "Sass", "jQuery", "MySQL", "Scrum"]
+        },
+        {
+          "id": "empiricus",
+          "company": "Empiricus",
+          "modality": "Brasil",
+          "role": "Full Stack Developer",
+          "period": "Jun 2017 – Jul 2021",
+          "duration": "4 anos e 2 meses",
+          "highlights": [
+            "Liderei a arquitetura do zero de um CMS proprietário em Laravel (Kubernetes) substituindo o WordPress.",
+            "Otimizei o frontend (Vue.js/Nuxt.js) para lidar com picos massivos de tráfego."
+          ],
+          "tech": ["PHP", "Laravel", "Vue.js", "Nuxt.js", "Kubernetes", "AWS", "ElasticSearch", "MongoDB", "Redis"]
+        },
+        {
+          "id": "uol",
+          "company": "UOL - Universo Online",
+          "modality": "Brasil",
+          "role": "Full Stack Developer",
+          "period": "Dez 2016 – Jun 2017",
+          "duration": "7 meses",
+          "highlights": [
+            "Equipe de manutenção editorial. Resolução de problemas garantindo uptime 24/7."
+          ],
+          "tech": ["AngularJS", "HTML", "CSS", "jQuery"]
+        },
+        {
+          "id": "upwell",
+          "company": "Upwell",
+          "modality": "Freelancer",
+          "role": "Senior System Analyst / Tech Lead",
+          "period": "Jul 2016 – Nov 2016",
+          "duration": "5 meses",
+          "highlights": [
+            "Liderança de UX e backend para app médico.",
+            "Gestão de ritos Ágeis/Scrum."
+          ],
+          "tech": ["Lumen", "MongoDB", "Socket.io", "Node.js", "ElasticSearch", "Scrum"]
+        },
+        {
+          "id": "digitalbox",
+          "company": "DigitalBox",
+          "modality": "",
+          "role": "Full Stack Developer",
+          "period": "Jan 2015 – Abr 2016",
+          "duration": "1 ano e 4 meses",
+          "highlights": [
+            "Manutenção de projetos legados e criação de novos backends."
+          ],
+          "tech": ["PHP", "jQuery", "Gulp", "HTML", "CSS"]
+        },
+        {
+          "id": "alicewonders",
+          "company": "AliceWonders",
+          "modality": "",
+          "role": "Developer",
+          "period": "Fev 2014 – Dez 2014",
+          "duration": "11 meses",
+          "highlights": [
+            "Criação de soluções digitais e apps mobile híbridos."
+          ],
+          "tech": ["JavaScript", "Apache Cordova", "jQuery Mobile", "PHP"]
+        },
+        {
+          "id": "lov-dentsu",
+          "company": "LOV - Dentsu",
+          "modality": "",
+          "role": "Programador PHP",
+          "period": "Nov 2012 – Fev 2014",
+          "duration": "1 ano e 4 meses",
+          "highlights": [
+            "Sistemas administrativos, relatórios de BI e landing pages."
+          ],
+          "tech": ["PHP", "MySQL (Procedures/Events)", "Ajax", "JavaScript"]
+        },
+        {
+          "id": "planet-off",
+          "company": "Planet Off",
+          "modality": "",
+          "role": "Programador PHP",
+          "period": "Jan 2012 – Ago 2012",
+          "duration": "8 meses",
+          "highlights": [
+            "Desenvolvimento de rede social de cupons de desconto."
+          ],
+          "tech": ["PHP", "MySQL", "JavaScript", "HTML"]
+        },
+        {
+          "id": "noweb",
+          "company": "Noweb Publicidade",
+          "modality": "",
+          "role": "Web Developer",
+          "period": "Jan 2011 – Jan 2012",
+          "duration": "1 ano e 1 mês",
+          "highlights": [],
+          "tech": ["PHP", "HTML", "CSS", "JavaScript"]
+        }
+      ]
+    },
+    "education": {
+      "title": "Formação",
+      "items": [
+        {
+          "id": "infnet",
+          "institution": "Instituto INFNET",
+          "degree": "Bacharelado em Ciência de Dados e IA/ML",
+          "period": "Jan 2025 – Presente",
+          "highlights": [
+            "IA e Machine Learning: Estudo aprofundado de algoritmos de aprendizado de máquina, com foco na arquitetura e implementação de modelos preditivos. Aprendizado Supervisionado (Classificação) e Clusterização.",
+            "Engenharia de dados com Python (Pandas, Scikit-Learn), consultas avançadas em SQL (PostgreSQL) e Análise Exploratória de Dados (EDA) para extração de insights estratégicos.",
+            "Data-Driven Apps (desenvolvimento de frontends interativos com Streamlit), Engenharia de Prompts, IA Model Life Cycle e LangChain."
+          ]
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certificações",
+      "items": [
+        { "id": "r-2025", "name": "Introdução à Ciência de Dados com R", "year": "2025" },
+        { "id": "devops-2024", "name": "DevOps — Abordagem CI e CD", "year": "2024" },
+        { "id": "ml-python-2021", "name": "Machine Learning e Ciência de Dados com Python", "year": "2021" },
+        { "id": "stats-2021", "name": "Estatística para Ciência de Dados e Machine Learning", "year": "2021" }
+      ]
+    }
+  },
+  "contact": {
+    "pageTitle": "Contato",
+    "contactInfo": {
+      "title": "Informações de Contato",
+      "emailLabel": "E-mail",
+      "locationLabel": "Localização",
+      "remoteLabel": "Remoto",
+      "timezoneLabel": "Fuso Horário",
+      "email": "hello@withheiz.com",
+      "location": "Palmas, TO, Brasil",
+      "remote": "Trabalho Remoto Disponível",
+      "timezone": "Fuso Horário GMT-3"
+    },
+    "socialProfiles": {
+      "title": "Perfis Sociais",
+      "items": [
+        {
+          "id": "linkedin",
+          "label": "LinkedIn",
+          "href": "https://www.linkedin.com/in/brunodev/"
+        },
+        {
+          "id": "github",
+          "label": "GitHub",
+          "href": "https://github.com/nunesdev"
+        },
+        {
+          "id": "instagram",
+          "label": "Instagram",
+          "href": "https://www.instagram.com/withheiz/"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Pronto para colaborar?",
+      "text": "Estou sempre aberto a discutir novas oportunidades, projetos interessantes ou apenas ter uma boa conversa sobre tecnologia.",
+      "button": "Envie-me um email",
+      "email": "hello@withheiz.com"
+    }
+  }
+}
