@@ -28,7 +28,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
 
-  const resolved = resolveProjectPage(slug);
+  const resolved = resolveProjectPage(slug, locale);
   if (!resolved) {
     notFound();
   }

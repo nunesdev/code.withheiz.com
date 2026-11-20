@@ -1,8 +1,8 @@
 import { getCaseStudyBySlug, getAllCaseStudySlugs } from "@/data/case-studies";
 import { getProjectBySlug, getAllProjectSlugs } from "@/data/projects";
 
-export function resolveProjectPage(slug) {
-  const caseStudy = getCaseStudyBySlug(slug);
+export function resolveProjectPage(slug, locale = "en") {
+  const caseStudy = getCaseStudyBySlug(slug, locale);
   if (caseStudy) {
     return { type: "caseStudy", data: caseStudy };
   }

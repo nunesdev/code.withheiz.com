@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Bruno Nunes",
-    "description": "Engenheiro de Software — Ciência de Dados, Machine Learning e tecnologia criativa."
+    "description": "Engenheiro de Software Sênior — sistemas web em produção, APIs, pipelines de dados e Machine Learning aplicado."
   },
   "nav": {
     "home": "Início",
@@ -12,10 +12,31 @@
   },
   "home": {
     "name": "Bruno Nunes",
-    "bio": "Engenheiro de Software com 15 anos de experiência, atualmente focado em Ciência de Dados, Machine Learning e projetos de tecnologia criativa que combinam dados e narrativa visual.",
-    "projectsHeading": "Projetos selecionados em Ciência de Dados & Machine Learning",
+    "roleHeadline": "Engenheiro de Software Sênior · Engenharia de Dados & ML",
+    "bio": "Mais de 15 anos construindo sistemas web, APIs e microsserviços em produção. Hoje uno engenharia de software sênior com pipelines de dados e Machine Learning aplicado.",
+    "availability": "Brasil (GMT-3) · Remoto (BR / Global) · Disponível para novas oportunidades",
+    "actionsAriaLabel": "Contato e perfis",
+    "previousExperience": "Experiência prévia: WA.Technology · Natixis · Empiricus · UOL",
+    "projectsHeading": "Projetos Selecionados",
+    "viewAll": "Ver todos →",
+    "projectsPageIntro": "Estudos de caso e trabalhos de portfólio em backend, pipelines de dados e ML aplicado.",
     "viewProject": "Ver projeto",
-    "projectVisualAlt": "Visual do projeto"
+    "projectVisualAlt": "Visual do projeto",
+    "coreStack": {
+      "srHeading": "Stack principal",
+      "backend": {
+        "title": "Backend & Full-Stack",
+        "body": "PHP (Laravel), Python (FastAPI), JavaScript/TypeScript, React, Next.js, REST APIs, Microsserviços"
+      },
+      "data": {
+        "title": "Dados & ML Aplicado",
+        "body": "Python (Pandas, Scikit-Learn, PyTorch), Hugging Face, SQL (PostgreSQL, MySQL), ETL & Scraping, EDA"
+      },
+      "infra": {
+        "title": "Infraestrutura & Entrega",
+        "body": "Docker, Linux, Nginx, Git, CI/CD, Testes Automatizados"
+      }
+    }
   },
   "footer": {
     "linkedin": "LinkedIn",

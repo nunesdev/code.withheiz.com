@@ -1,7 +1,14 @@
 import { Link } from "@/i18n/navigation";
 import { ProjectMetadata } from "@/components/case-study/project-metadata";
 
-export function ProjectHeader({ breadcrumbs, title, subtitle, meta }) {
+export function ProjectHeader({
+  breadcrumbs,
+  title,
+  subtitle,
+  meta,
+  metaFieldConfig,
+  metaLabels,
+}) {
   return (
     <header className="space-y-6 border-b border-border pb-8">
       <nav
@@ -30,7 +37,13 @@ export function ProjectHeader({ breadcrumbs, title, subtitle, meta }) {
         ) : null}
       </div>
 
-      {meta ? <ProjectMetadata meta={meta} /> : null}
+      {meta ? (
+        <ProjectMetadata
+          meta={meta}
+          fieldConfig={metaFieldConfig}
+          labels={metaLabels}
+        />
+      ) : null}
     </header>
   );
 }

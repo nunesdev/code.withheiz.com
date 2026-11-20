@@ -1,5 +1,19 @@
 export const projects = [
   {
+    type: "case-study",
+    titleEn: "Local NLP Sentiment API & Data Pipeline",
+    titlePt: "API de NLP Local e Pipeline de Dados",
+    summaryEn:
+      "End-to-end ML engineering pipeline serving a multilingual BERT sentiment model 100% locally on CPU via FastAPI, with incremental scraping, strict Pydantic contracts, and reproducible latency benchmarks.",
+    summaryPt:
+      "Pipeline end-to-end de engenharia de ML servindo um modelo BERT multilíngue 100% local em CPU com FastAPI, coleta incremental, contratos Pydantic e benchmark reprodutível de latência.",
+    tags: ["Python", "FastAPI", "Hugging Face", "PyTorch", "Streamlit", "Pydantic", "BeautifulSoup"],
+    slug: "local-nlp-fastapi",
+    images: [
+      "/images/projects/local_nlp_fastapi.jpeg"
+    ]
+  },
+  {
     title: "Análise Exploratória da Base de Usuários da Netflix",
     description:
       "Este projeto é parte das atividades da graduação em Ciência de Dados (Infnet 2024–2027) e explora uma base sintética de usuários da Netflix. O objetivo é praticar manipulação de dados com pandas, construção de cenários hipotéticos e uso de índices hierárquicos para responder a perguntas de negócio.",

@@ -1,18 +1,10 @@
 import { getTranslations } from "next-intl/server";
+import { siteLinks } from "@/config/site-links";
 
 const social = [
-  {
-    key: "linkedin",
-    href: "https://www.linkedin.com/in/brunodev/",
-  },
-  {
-    key: "github",
-    href: "https://github.com/nunesdev",
-  },
-  {
-    key: "email",
-    href: "mailto:hello@withheiz.com",
-  },
+  { key: "linkedin", href: siteLinks.linkedin },
+  { key: "github", href: siteLinks.github },
+  { key: "email", href: siteLinks.email },
 ];
 
 export async function Footer() {

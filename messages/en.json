@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Bruno Nunes",
-    "description": "Software Engineer — Data Science, Machine Learning & creative technology."
+    "description": "Senior Software Engineer — production web systems, APIs, data pipelines, and applied Machine Learning."
   },
   "nav": {
     "home": "Home",
@@ -12,10 +12,31 @@
   },
   "home": {
     "name": "Bruno Nunes",
-    "bio": "Software Engineer with 15 years of experience, currently focusing on Data Science, Machine Learning and creative technology projects that combine data and visual storytelling.",
-    "projectsHeading": "Selected Projects in Data Science & Machine Learning",
+    "roleHeadline": "Senior Software Engineer · Data & ML Engineering",
+    "bio": "15+ years building production web systems, APIs, and microservices. Bridging senior software engineering with data pipelines and applied Machine Learning.",
+    "availability": "Brazil (GMT-3) · Remote (BR / Global) · Open to new opportunities",
+    "actionsAriaLabel": "Contact and profiles",
+    "previousExperience": "Previously at: WA.Technology · Natixis · Empiricus · UOL",
+    "projectsHeading": "Selected Projects",
+    "viewAll": "View all →",
+    "projectsPageIntro": "Case studies and portfolio work across backend systems, data pipelines, and applied ML.",
     "viewProject": "View project",
-    "projectVisualAlt": "Project visual"
+    "projectVisualAlt": "Project visual",
+    "coreStack": {
+      "srHeading": "Core stack",
+      "backend": {
+        "title": "Backend & Full-Stack",
+        "body": "PHP (Laravel), Python (FastAPI), JavaScript/TypeScript, React, Next.js, REST APIs, Microservices"
+      },
+      "data": {
+        "title": "Data & Applied ML",
+        "body": "Python (Pandas, Scikit-Learn, PyTorch), Hugging Face, SQL (PostgreSQL, MySQL), ETL & Scraping, EDA"
+      },
+      "infra": {
+        "title": "Infrastructure & Delivery",
+        "body": "Docker, Linux, Nginx, Git, CI/CD, Automated Testing"
+      }
+    }
   },
   "footer": {
     "linkedin": "LinkedIn",

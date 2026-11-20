@@ -7,7 +7,7 @@ import { LocaleSwitcher } from "@/components/locale-switcher";
 
 const navItems = [
   { key: "home", href: "/" },
-  { key: "projects", href: "/#projects" },
+  { key: "projects", href: "/projects" },
   { key: "resume", href: "/resume" },
   { key: "blog", href: "/blog" },
   { key: "contact", href: "/contact" },

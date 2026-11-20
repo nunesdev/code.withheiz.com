@@ -5,7 +5,11 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 export function Providers({ children, locale, messages }) {
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
+    <NextIntlClientProvider
+      locale={locale}
+      messages={messages}
+      timeZone="America/Sao_Paulo"
+    >
       <ThemeProvider
         attribute="class"
         defaultTheme="system"

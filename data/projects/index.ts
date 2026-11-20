@@ -1,15 +1,20 @@
 import { projects as portfolioProjects } from "./portfolio.js";
 
 export type Project = {
-  title: string;
-  description: string;
+  title?: string;
+  titleEn?: string;
+  titlePt?: string;
+  description?: string;
+  summaryEn?: string;
+  summaryPt?: string;
   tags: string[];
   slug?: string;
   link?: string;
+  type?: "case-study" | "portfolio";
   images?: string[];
 };
 
-export const projects: Project[] = portfolioProjects;
+export const projects = portfolioProjects as Project[];
 
 const slugAliases: Record<string, string> = {
   "spotify-dataset-analysis":
@@ -20,8 +25,21 @@ function resolveSlug(slug: string) {
   return slugAliases[slug] ?? slug;
 }
 
-export function getLatestProjects(limit = projects.length) {
-  return projects.slice(0, limit);
+export function localizeProject(project: Project, locale: string): Project {
+  const isPt = locale === "pt";
+  return {
+    ...project,
+    title: isPt
+      ? (project.titlePt ?? project.title ?? "")
+      : (project.titleEn ?? project.title ?? ""),
+    description: isPt
+      ? (project.summaryPt ?? project.description ?? "")
+      : (project.summaryEn ?? project.description ?? ""),
+  };
+}
+
+export function getLatestProjects(locale = "en", limit = projects.length) {
+  return projects.slice(0, limit).map((p) => localizeProject(p, locale));
 }
 
 export function getProjectBySlug(slug: string) {

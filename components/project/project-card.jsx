@@ -1,14 +1,55 @@
+import { Link } from "@/i18n/navigation";
 import { ProjectCardCta } from "@/components/project/project-card-cta";
 
+const titleLinkClass =
+  "relative text-lg font-semibold tracking-tight text-foreground after:absolute after:inset-0 after:content-[''] focus:outline-none";
+
+const cardBaseClass =
+  "animate-fadeIn rounded-md border border-border bg-background p-6";
+
+const cardInteractiveClass =
+  "group relative transition-colors hover:border-muted-foreground/35 focus-within:ring-2 focus-within:ring-border focus-within:ring-offset-2 focus-within:ring-offset-background dark:hover:border-muted-foreground/50";
+
 export function ProjectCard({ project, viewProjectLabel, imageAlt }) {
+  const isExternal = Boolean(project.link);
+  const hasDestination = Boolean(project.link ?? project.slug);
+
+  const titleContent = project.title;
+
   return (
-    <article className="animate-fadeIn border-b border-border pb-8 last:border-b-0">
-      <h2 className="mb-1 text-lg font-semibold tracking-tight text-foreground">
-        {project.title}
+    <article
+      className={
+        hasDestination
+          ? `${cardBaseClass} ${cardInteractiveClass}`
+          : cardBaseClass
+      }
+    >
+      <h2 className="mb-1">
+        {hasDestination && isExternal ? (
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={titleLinkClass}
+          >
+            {titleContent}
+          </a>
+        ) : hasDestination ? (
+          <Link href={`/project/${project.slug}`} className={titleLinkClass}>
+            {titleContent}
+          </Link>
+        ) : (
+          <span className="text-lg font-semibold tracking-tight text-foreground">
+            {titleContent}
+          </span>
+        )}
       </h2>
-      <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
-        {project.description}
-      </p>
+
+      {project.description ? (
+        <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
+          {project.description}
+        </p>
+      ) : null}
 
       {project.images && project.images.length > 0 ? (
         <div
@@ -36,7 +77,7 @@ export function ProjectCard({ project, viewProjectLabel, imageAlt }) {
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="rounded-md border border-border bg-surface px-2 py-1 text-xs font-medium text-foreground"
+              className="rounded-md border border-border bg-surface px-3 py-1 text-sm font-medium text-foreground"
             >
               {tag}
             </span>
@@ -44,7 +85,9 @@ export function ProjectCard({ project, viewProjectLabel, imageAlt }) {
         </div>
       ) : null}
 
-      <ProjectCardCta project={project} label={viewProjectLabel} />
+      {hasDestination ? (
+        <ProjectCardCta external={isExternal} label={viewProjectLabel} />
+      ) : null}
     </article>
   );
 }
