@@ -1,7 +1,7 @@
 import { ProjectSection } from "@/components/case-study/project-section";
 import { ProjectHeader } from "@/components/case-study/project-header";
 import { CalloutBlock } from "@/components/case-study/callout-block";
-import { CaseStudyFigureGrid } from "@/components/case-study/case-study-figure-grid";
+import { CaseStudyMediaGallery } from "@/components/case-study/case-study-media-gallery";
 
 export function FullStackCaseStudyView({ study }) {
   const s = study.sections;
@@ -17,8 +17,11 @@ export function FullStackCaseStudyView({ study }) {
         metaLabels={study.metaLabels}
       />
 
-      {study.figures?.length ? (
-        <CaseStudyFigureGrid figures={study.figures} />
+      {study.heroFigure || study.galleryFigures?.length ? (
+        <CaseStudyMediaGallery
+          heroFigure={study.heroFigure}
+          galleryFigures={study.galleryFigures}
+        />
       ) : null}
 
       <ProjectSection title={s.problem.title}>

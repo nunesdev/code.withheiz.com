@@ -12,7 +12,7 @@ const META_FIELD_CONFIG = [
 ];
 
 const STACK = [
-  "PHP 7",
+  "PHP",
   "Laravel 5.8",
   "Vue.js",
   "Vuex",
@@ -21,21 +21,12 @@ const STACK = [
   "Docker",
   "PWA (Service Workers)",
   "OneSignal",
+  "Hotjar",
   "Sass",
 ];
 
-const FIGURES = [
-  {
-    src: "/images/projects/teajudome/hero-map.jpg",
-    alt: "TeAjudo.me map view across Brazil",
-    captionKey: "heroMap",
-  },
-  {
-    src: "/images/projects/teajudome/mapbox-feature.png",
-    alt: "Mapbox official feature on Medium",
-    captionKey: "mapboxFeature",
-  },
-];
+const PRESS_MEDIUM =
+  "https://medium.com/mapbox/creativity-and-compassion-in-covid-19-ed3c0fd54c5d";
 
 export const teajudome = {
   id: "teajudome",
@@ -57,13 +48,13 @@ export const teajudome = {
         stack: "Stack",
       },
       meta: {
-        period: "Mar – May 2020",
+        period: "Mar 2020 – Mar 2021",
         role: "Creator, Architect & Full Stack Developer",
         category: "Full Stack Web & PWA",
         pressLinks: [
           {
             label: "Mapbox — Creativity and Compassion in COVID-19 (Medium)",
-            href: "https://medium.com/mapbox/creativity-and-compassion-in-covid-19-ed3c0fd54c5d",
+            href: PRESS_MEDIUM,
           },
           {
             label: "Mapbox on X",
@@ -72,32 +63,63 @@ export const teajudome = {
         ],
         stack: STACK,
       },
-      figures: FIGURES.map((f) => ({
-        ...f,
-        alt:
-          f.captionKey === "heroMap"
-            ? "Main map capture showing TeAjudo.me activity across Brazil"
-            : "Screenshot from the official Mapbox Medium feature",
+      heroFigure: {
+        src: "/images/projects/teajudome/hero-map-br.jpg",
+        alt: "TeAjudo.me nationwide map view and Mapbox sponsorship",
         caption:
-          f.captionKey === "heroMap"
-            ? "Primary map view — categorized pins and nationwide reach during the first weeks of lockdown."
-            : "Official Mapbox community impact story featuring TeAjudo.me.",
-      })),
+          "National production map — category pins, volunteer density, and Mapbox-backed geospatial layer.",
+      },
+      galleryFigures: [
+        {
+          src: "/images/projects/teajudome/fao-wfp-meeting.jpg",
+          alt: "FAO and WFP technical session",
+          caption:
+            "Technical session with Valessio Brito and specialists linked to FAO and WFP.",
+        },
+        {
+          src: "/images/projects/teajudome/mobile-map-sp.png",
+          alt: "Greater São Paulo production mobile map",
+          caption:
+            "Production mobile map in Greater São Paulo (124+ volunteers and 70+ small businesses).",
+        },
+        {
+          src: "/images/projects/teajudome/mapbox-feature.png",
+          alt: "Mapbox official blog feature",
+          caption:
+            "Featured on Mapbox's official blog (Creativity and Compassion in COVID-19).",
+        },
+        {
+          src: "/images/projects/teajudome/hotjar-heatmap.png",
+          alt: "Hotjar tap heatmap",
+          caption:
+            "Hotjar tap heatmap uncovering dead clicks on non-interactive elements to guide UX improvements.",
+        },
+        {
+          src: "/images/projects/teajudome/mobile-list-filters.png",
+          alt: "Mobile list with radius and delivery filters",
+          caption:
+            "Mobile-first list view with radius filters (10–100 km) and delivery options.",
+        },
+      ],
       sections: {
         problem: {
           title: "Context & problem",
-          body: "At the onset of COVID-19 lockdowns in March 2020, vulnerable and quarantined individuals needed help with essential errands and mental health support, while small neighborhood businesses struggled to reach local buyers. The engineering goal was to ship a lightweight, mobile-first web app within days—installable without app store friction and centered on hyper-local proximity.",
+          body: "At the onset of COVID-19 lockdowns in March 2020, vulnerable individuals needed help with essential errands and mental health support, while small neighborhood producers and merchants lost local foot traffic. The engineering challenge was to ship a lightweight, mobile-first PWA within days—installable without app store friction and built around hyper-local proximity.",
         },
         architecture: {
-          title: "Architecture & technical decisions",
+          title: "Architecture, technical decisions & data-driven UX",
           decisions: [
             {
               title: "Back-end & geographic data layer (Laravel 5.8 + MySQL)",
-              body: "Built a RESTful API and authentication layer in Laravel 5.8 backed by a complete relational dataset of Brazilian states and municipalities (UfTableSeeder / CityTableSeeder).",
+              body: "Built a RESTful API and authentication layer in Laravel 5.8 backed by a relational dataset of Brazilian states and municipalities (UfTableSeeder / CityTableSeeder).",
             },
             {
               title: "Map-first interface & proximity filtering (Vue.js + Vuex + Mapbox GL)",
-              body: "Engineered a reactive SPA with modular Vuex state management (markers, movimento) rendering custom pins by category (help requests, volunteers, volunteer psychologists, local businesses) alongside a list view with radius filters (10 km, 50 km, 100 km) and delivery flags.",
+              body: "Engineered a reactive SPA with modular Vuex state (markers, movimento) rendering custom pins by category alongside a mobile list view with radius filters (10 km, 50 km, 100 km), delivery flags, and business categories.",
+            },
+            {
+              title: "UX telemetry with Hotjar heatmaps",
+              body: "Tracked tap/click heatmaps (heavily mobile-driven) that uncovered dead clicks on non-interactive elements—such as users tapping top summary counters expecting list/filter actions—guiding targeted touch-target and navigation improvements.",
             },
             {
               title: "Low-friction onboarding & direct contact",
@@ -105,7 +127,11 @@ export const teajudome = {
             },
             {
               title: "PWA, web push & i18n",
-              body: "Configured manifest.json and service-worker.js for direct browser installation, OneSignal push notifications, and localization in Portuguese, English, and Spanish.",
+              body: "Configured manifest.json and service-worker.js for browser installation, OneSignal push notifications, and localization in Portuguese, English, and Spanish.",
+            },
+            {
+              title: "Campaign engine & transparency",
+              body: "Added modular campaign support (Movimento 117 — #AmorEmMovimento) and a public transparency page documenting food-basket deliveries.",
             },
             {
               title: "Containerized setup",
@@ -114,15 +140,19 @@ export const teajudome = {
           ],
         },
         impact: {
-          title: "Impact & external validation",
+          title: "Impact, external validation & technical demonstration",
           items: [
             {
-              title: "Nationwide adoption",
-              body: "Reached 250+ active volunteers across Brazil and ~300 entries spanning help requests, volunteers (including psychologists offering free online counseling), and small local merchants.",
+              title: "Production reach",
+              body: "Operated for 12 months (March 2020 to March 2021), reaching 250+ active volunteers nationwide and 124+ volunteers alongside 70+ small local businesses in Greater São Paulo alone.",
             },
             {
               title: "Mapbox sponsorship",
-              body: "Highlighted by Mapbox’s community impact team in Creativity and Compassion in COVID-19 and granted an unlimited premium plan for map rendering and geocoding at zero API cost.",
+              body: "Featured by Mapbox’s community impact team in Creativity and Compassion in COVID-19 and granted an unlimited premium plan for map rendering and geocoding.",
+            },
+            {
+              title: "Technical demonstration for FAO/WFP specialists",
+              body: "In April 2020, invited by Valessio Brito (free-software specialist and current president of Instituto iCAT), demonstrated the platform's architecture in a technical session with specialists and advisors linked to FAO and WFP—including Albaneide Peixinho and Cezar Alvarez—to explore adapting the codebase for small agricultural producers; a meaningful validation for an independent project, though not rolled out as workflows evolved over the following weeks.",
             },
           ],
         },
@@ -142,7 +172,7 @@ export const teajudome = {
       },
       footerCallout: {
         label: "External feature",
-        href: "https://medium.com/mapbox/creativity-and-compassion-in-covid-19-ed3c0fd54c5d",
+        href: PRESS_MEDIUM,
         cta: "Read on Mapbox Medium",
         body: "Official Mapbox story on how TeAjudo.me combined geospatial tooling with community impact during COVID-19.",
       },
@@ -160,14 +190,14 @@ export const teajudome = {
         stack: "Stack",
       },
       meta: {
-        period: "Mar – Mai 2020",
+        period: "Mar 2020 – Mar 2021",
         role: "Criador, Arquiteto & Desenvolvedor Full Stack",
         category: "Full Stack Web & PWA",
         pressLinks: [
           {
             label:
               "Mapbox — Creativity and Compassion in COVID-19 (Medium)",
-            href: "https://medium.com/mapbox/creativity-and-compassion-in-covid-19-ed3c0fd54c5d",
+            href: PRESS_MEDIUM,
           },
           {
             label: "Mapbox no X",
@@ -176,40 +206,75 @@ export const teajudome = {
         ],
         stack: STACK,
       },
-      figures: FIGURES.map((f) => ({
-        ...f,
-        alt:
-          f.captionKey === "heroMap"
-            ? "Captura principal do mapa TeAjudo.me no Brasil"
-            : "Recorte da matéria oficial da Mapbox no Medium",
+      heroFigure: {
+        src: "/images/projects/teajudome/hero-map-br.jpg",
+        alt: "Visão nacional do mapa TeAjudo.me e patrocínio Mapbox",
         caption:
-          f.captionKey === "heroMap"
-            ? "Visão principal do mapa — pinos por categoria e alcance nacional nas primeiras semanas do isolamento."
-            : "Matéria oficial do time de impacto comunitário da Mapbox.",
-      })),
+          "Mapa nacional em produção — pinos por categoria, densidade de voluntários e camada Mapbox.",
+      },
+      galleryFigures: [
+        {
+          src: "/images/projects/teajudome/fao-wfp-meeting.jpg",
+          alt: "Reunião com especialistas FAO e WFP",
+          caption:
+            "Reunião técnica com Valessio Brito e especialistas ligados à FAO e ao WFP.",
+        },
+        {
+          src: "/images/projects/teajudome/mobile-map-sp.png",
+          alt: "Mapa mobile na Grande São Paulo",
+          caption:
+            "Mapa mobile em produção na Grande São Paulo (124+ voluntários e 70+ pequenos negócios).",
+        },
+        {
+          src: "/images/projects/teajudome/mapbox-feature.png",
+          alt: "Destaque no blog da Mapbox",
+          caption:
+            "Destaque no blog oficial da Mapbox (Creativity and Compassion in COVID-19).",
+        },
+        {
+          src: "/images/projects/teajudome/hotjar-heatmap.png",
+          alt: "Mapa de calor Hotjar",
+          caption:
+            "Mapa de calor de toques no Hotjar identificando cliques em elementos não interativos para melhoria de UX.",
+        },
+        {
+          src: "/images/projects/teajudome/mobile-list-filters.png",
+          alt: "Listagem mobile com filtros",
+          caption:
+            "Visão em lista mobile-first com filtros por raio de distância (10–100 km) e entrega.",
+        },
+      ],
       sections: {
         problem: {
           title: "Contexto e problema",
-          body: "No início do isolamento social em março de 2020, grupos de risco precisavam de apoio para compras essenciais, farmácia e suporte psicológico, enquanto pequenos comerciantes de bairro perderam fluxo de clientes. O desafio técnico era colocar no ar, em poucos dias, uma aplicação leve, instalável em celulares de entrada sem depender de lojas de aplicativos e centrada em proximidade geográfica.",
+          body: "Em março de 2020, o isolamento social impediu grupos de risco de realizar tarefas essenciais (compras, farmácia, apoio psicológico), enquanto pequenos produtores e comércios de bairro perderam canais de venda. O desafio foi lançar em poucos dias uma plataforma leve, instalável via navegador (PWA) sem atrito de lojas de aplicativos e centrada em proximidade geográfica.",
         },
         architecture: {
-          title: "Arquitetura e decisões técnicas",
+          title: "Arquitetura, decisões técnicas e iteração por dados",
           decisions: [
             {
               title: "Back-end e dados geográficos (Laravel 5.8 + MySQL)",
-              body: "API RESTful e autenticação em Laravel 5.8 com base relacional completa de estados e municípios brasileiros (UfTableSeeder / CityTableSeeder) para normalização de localização.",
+              body: "API RESTful e autenticação em Laravel 5.8 com base relacional de estados e municípios brasileiros (UfTableSeeder / CityTableSeeder).",
             },
             {
               title: "Interface map-first e filtros de proximidade (Vue.js + Vuex + Mapbox GL)",
-              body: "SPA reativa com estado modular (markers, movimento) renderizando marcadores por categoria (pedidos de ajuda, voluntários, psicólogos voluntários e pequenos negócios) e visão alternativa em lista com filtros por raio de distância (10 km, 50 km, 100 km) e disponibilidade de entrega.",
+              body: "SPA reativa com módulos Vuex (markers, movimento) renderizando marcadores por categoria e visão mobile em lista com filtro por raio (10 km, 50 km, 100 km), entrega e ramo de atividade.",
+            },
+            {
+              title: "Telemetria de UX com Hotjar (mapas de calor)",
+              body: "Instrumentação de mapas de calor de cliques/toques (predominantemente mobile) que revelou dead clicks em elementos não interativos — como usuários tocando nos contadores do topo esperando abrir filtros ou listagens — guiando ajustes de navegação e áreas de toque.",
             },
             {
               title: "Onboarding rápido e contato direto",
-              body: "Cadastro em menos de 5 minutos com ajuste manual de pino no mapa e contato em um clique via WhatsApp, telefone ou e-mail, eliminando intermediários.",
+              body: "Cadastro em menos de 5 minutos com ajuste manual de pino no mapa e contato direto via WhatsApp, telefone ou e-mail.",
             },
             {
               title: "PWA, web push e internacionalização",
-              body: "Configuração de manifest.json e service-worker.js para instalação direta no navegador móvel, notificações push via OneSignal e suporte em Português, Inglês e Espanhol.",
+              body: "manifest.json e service-worker.js para instalação direta no celular, notificações push via OneSignal e suporte em Português, Inglês e Espanhol.",
+            },
+            {
+              title: "Campanhas e transparência",
+              body: "Suporte modular a campanhas parceiras (Movimento 117 — #AmorEmMovimento) e página pública de prestação de contas.",
             },
             {
               title: "Infraestrutura",
@@ -218,15 +283,19 @@ export const teajudome = {
           ],
         },
         impact: {
-          title: "Impacto e validação externa",
+          title: "Impacto, validação externa e articulação técnica",
           items: [
             {
-              title: "Alcance nacional",
-              body: "Mais de 250 voluntários ativos pelo Brasil e ~300 registros entre pedidos de ajuda, voluntários (incluindo psicólogos com atendimento gratuito) e pequenos comércios locais.",
+              title: "Adoção em produção",
+              body: "Operou no ar por 12 meses (março de 2020 a março de 2021), superando 250 voluntários ativos pelo Brasil e reunindo mais de 124 voluntários e 70 pequenos negócios mapeados apenas no recorte da Grande São Paulo.",
             },
             {
-              title: "Patrocínio da Mapbox",
+              title: "Patrocínio oficial da Mapbox",
               body: "Selecionado pela equipe de impacto comunitário da Mapbox, publicado no blog oficial (Creativity and Compassion in COVID-19) e patrocinado com plano premium ilimitado de mapas e geocodificação.",
+            },
+            {
+              title: "Demonstração técnica para especialistas FAO/WFP",
+              body: "Em abril de 2020, a convite de Valessio Brito (especialista em Software Livre e atual presidente do Instituto iCAT), apresentei a arquitetura do sistema em reunião técnica com especialistas e consultores ligados à FAO e ao WFP (incluindo Albaneide Peixinho e Cezar Alvarez) para discutir o possível reaproveitamento do código-base no apoio a pequenos produtores — validação relevante para um projeto independente, embora não tenha avançado para implantação diante da rápida evolução do cenário nos meses seguintes.",
             },
           ],
         },
@@ -234,19 +303,19 @@ export const teajudome = {
           title: "Trade-offs de engenharia e evolução arquitetural",
           items: [
             {
-              title: "Trade-off de 2020 (time-to-market)",
-              body: "Em cenário de emergência sanitária, priorizei velocidade de entrega e estabilidade mobile (PWA + Mapbox) mantendo endpoints diretos nos controllers do Laravel 5.8.",
+              title: "Trade-off de 2020 (velocidade de entrega)",
+              body: "Em cenário de emergência sanitária, priorizei time-to-market e estabilidade mobile (PWA + Mapbox), mantendo endpoints diretos nos controllers do Laravel 5.8.",
             },
             {
               title: "Como eu arquitetaria hoje",
-              body: "Extrairia regras de negócio para Service/Action classes com DTOs tipados, substituiria filtros de distância em memória por índices espaciais nativos (MySQL Spatial ou PostGIS), moveria disparos do OneSignal para filas assíncronas (Laravel Queues / Horizon) e cobriria os fluxos críticos com testes automatizados em PHPUnit/Pest.",
+              body: "Isolaria regras de negócio em Service/Action classes com DTOs tipados, substituiria filtros de distância em memória por índices espaciais nativos (MySQL Spatial ou PostGIS), moveria notificações OneSignal para filas assíncronas (Laravel Queues / Horizon) e cobriria os fluxos críticos com testes automatizados em PHPUnit/Pest.",
             },
           ],
         },
       },
       footerCallout: {
         label: "Destaque externo",
-        href: "https://medium.com/mapbox/creativity-and-compassion-in-covid-19-ed3c0fd54c5d",
+        href: PRESS_MEDIUM,
         cta: "Ler no Medium da Mapbox",
         body: "Matéria oficial da Mapbox sobre como o TeAjudo.me uniu mapas e impacto comunitário durante a COVID-19.",
       },

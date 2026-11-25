@@ -4,14 +4,22 @@ export const projects = [
     titleEn: "TeAjudo.me",
     titlePt: "TeAjudo.me",
     summaryEn:
-      "Geolocation-based mutual aid and local commerce platform built in days during the COVID-19 lockdown. Officially featured on Mapbox’s blog and sponsored with an unlimited premium plan.",
+      "Geolocation-based PWA built during the COVID-19 lockdown to connect mutual-aid requests, volunteers, and small local producers/merchants. Featured by Mapbox and demonstrated to specialists linked to FAO and WFP for small-producer support.",
     summaryPt:
-      "Plataforma colaborativa geolocalizada criada em resposta à pandemia de COVID-19 para conectar pedidos de ajuda, voluntários e pequenos comércios locais. Destacada oficialmente pela Mapbox.",
-    tags: ["PHP", "Laravel", "Vue.js", "Mapbox", "MySQL", "Docker", "PWA"],
+      "Plataforma geolocalizada (PWA) criada na pandemia de COVID-19 para conectar pedidos de ajuda, voluntários e pequenos produtores/comércios locais. Destacada oficialmente pela Mapbox e apresentada em reunião técnica a especialistas ligados à FAO e ao WFP.",
+    tags: [
+      "PHP",
+      "Laravel",
+      "Vue.js",
+      "Mapbox",
+      "MySQL",
+      "Docker",
+      "PWA",
+      "OneSignal",
+      "Hotjar",
+    ],
     slug: "teajudome",
-    images: [
-      "/images/projects/teajudome/hero-map.jpg"
-    ]
+    images: ["/images/projects/teajudome/hero-map-br.jpg"],
   },
   {
     type: "case-study",
