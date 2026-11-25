@@ -15,7 +15,7 @@ export function ProjectHeader({
         aria-label="Breadcrumb"
         className="flex flex-wrap items-center gap-1.5 text-xs text-muted"
       >
-        <Link href="/#projects" className="transition-colors hover:text-accent">
+        <Link href="/projects" className="transition-colors hover:text-accent">
           Projects
         </Link>
         {breadcrumbs.map((crumb) => (
@@ -33,7 +33,9 @@ export function ProjectHeader({
           {title}
         </h1>
         {subtitle ? (
-          <p className="max-w-2xl text-sm leading-relaxed text-muted">{subtitle}</p>
+          <p className="max-w-2xl text-sm leading-relaxed text-muted-foreground">
+            {subtitle}
+          </p>
         ) : null}
       </div>
 

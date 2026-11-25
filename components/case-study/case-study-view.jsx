@@ -6,6 +6,7 @@ import { ProjectHeader } from "@/components/case-study/project-header";
 import { ChartContainer } from "@/components/case-study/chart-container";
 import { CalloutBlock } from "@/components/case-study/callout-block";
 import { MlEngineeringCaseStudyView } from "@/components/case-study/ml-engineering-case-study-view";
+import { FullStackCaseStudyView } from "@/components/case-study/full-stack-case-study-view";
 
 function highlightPandas(text) {
   if (!text?.includes("pandas")) return text;
@@ -22,6 +23,10 @@ function highlightPandas(text) {
 export function CaseStudyView({ study }) {
   if (study.template === "ml-engineering") {
     return <MlEngineeringCaseStudyView study={study} />;
+  }
+
+  if (study.template === "full-stack") {
+    return <FullStackCaseStudyView study={study} />;
   }
 
   return (

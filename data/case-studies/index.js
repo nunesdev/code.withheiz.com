@@ -1,9 +1,11 @@
 import { netflixUserbaseProject } from "./netflix-userbase";
 import { localNlpFastapi } from "./local-nlp-fastapi";
+import { teajudome } from "./teajudome";
 
 const caseStudiesBySlug = {
   [netflixUserbaseProject.slug]: netflixUserbaseProject,
   [localNlpFastapi.slug]: localNlpFastapi,
+  [teajudome.slug]: teajudome,
 };
 
 function localizeCaseStudy(study, locale) {
