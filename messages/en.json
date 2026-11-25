@@ -60,7 +60,8 @@
       "overview": { "index": "01", "title": "Overview" },
       "experience": { "index": "02", "title": "Experience" },
       "education": { "index": "03", "title": "Education" },
-      "certifications": { "index": "04", "title": "Certifications" }
+      "languages": { "index": "04", "title": "Languages" },
+      "certifications": { "index": "05", "title": "Certifications" }
     },
     "overview": {
       "title": "Overview",
@@ -79,67 +80,68 @@
         {
           "id": "wa",
           "company": "WA.Technology",
-          "modality": "Remote",
+          "modality": "Pietà, Malta — Remote",
           "role": "Senior Software Engineering Consultant",
           "period": "Mar 2024 – Present",
           "duration": "2 yrs 9 mos",
           "highlights": [
-            "Accelerated deployment workflows and reduced Code Review bounce-back rates via AI-assisted development (Cursor/Claude).",
-            "Maintained and refactored a legacy monolithic system (PHP) using Docker, introducing Clean Architecture principles."
+            "Spearhead maintenance and incremental refactoring of core modules in a high-traffic B2B iGaming monolithic platform (PHP, Docker, MySQL), integrating external APIs and introducing Clean Architecture principles and PHPUnit automated tests.",
+            "Optimize database performance through advanced MySQL stored procedures and scheduled events while modularizing legacy frontend components for migration readiness.",
+            "Reduced code review rework and accelerated delivery cycles by introducing structured AI-assisted engineering workflows (Claude), including custom Claude Skills for static audits and GitLab Merge Request documentation."
           ],
-          "tech": ["PHP", "React", "Vanilla JS", "MySQL", "Docker", "Clean Architecture", "Jenkins"]
+          "tech": ["PHP", "MySQL", "Clean Architecture", "Docker", "PHPUnit", "GitLab", "JavaScript", "React", "RabbitMQ", "Jenkins"]
         },
         {
           "id": "natixis",
-          "company": "Natixis / Aubay",
-          "modality": "Remote/Portugal",
-          "role": "Full Stack Developer",
+          "company": "Natixis (via Aubay)",
+          "modality": "Porto/Lisbon, Portugal — Remote",
+          "role": "Senior Software Engineer / IT Consultant",
           "period": "Nov 2021 – Mar 2024",
           "duration": "2 yrs 5 mos",
           "highlights": [
-            "Focused on backend development to build, scale, and maintain internal HR systems.",
-            "Created custom WordPress themes/plugins and developed RESTful APIs using Laravel.",
-            "Optimized database structures via complex MySQL stored procedures."
+            "Engineered and scaled internal corporate web systems in a regulated banking environment using PHP, Laravel, and JavaScript within distributed Agile/Scrum teams.",
+            "Designed and maintained RESTful APIs (Laravel) and custom WordPress solutions integrated into CI/CD pipelines (Jenkins, Git).",
+            "Managed and tuned relational database operations via MySQL stored procedures and events."
           ],
-          "tech": ["PHP", "WordPress", "Laravel", "Vanilla JS", "Webpack", "Sass", "jQuery", "MySQL", "Scrum"]
+          "tech": ["PHP", "Laravel", "REST APIs", "MySQL", "JavaScript", "Docker", "Jenkins", "Scrum"]
         },
         {
           "id": "empiricus",
           "company": "Empiricus",
-          "modality": "Brazil",
+          "modality": "São Paulo, Brazil — Hybrid",
           "role": "Full Stack Developer",
           "period": "Jun 2017 – Jul 2021",
           "duration": "4 yrs 2 mos",
           "highlights": [
-            "Led the zero-to-one architecture of a proprietary Laravel/Multi-tenant CMS (on Kubernetes) replacing WordPress.",
-            "Ensured top frontend performance with Vue.js/Nuxt.js to handle massive simultaneous traffic spikes during market openings."
+            "Architected and built from scratch a proprietary, multi-tenant CMS in Laravel running as microservices on Kubernetes (AWS), replacing WordPress for high-conversion sales pages and editorial workflows.",
+            "Designed high-performance search and caching layers using Elasticsearch, Redis, and MongoDB alongside MySQL.",
+            "Evolved high-traffic Vue.js / Nuxt.js applications handling massive concurrent campaign spikes, achieving green scores on Google PageSpeed Insights and Lighthouse (Core Web Vitals)."
           ],
-          "tech": ["PHP", "Laravel", "Vue.js", "Nuxt.js", "Kubernetes", "AWS", "ElasticSearch", "MongoDB", "Redis"]
+          "tech": ["PHP", "Laravel", "Lumen", "Microservices", "Kubernetes", "AWS", "Vue.js", "Nuxt.js", "Elasticsearch", "MySQL", "Redis", "MongoDB"]
         },
         {
           "id": "uol",
           "company": "UOL - Universo Online",
-          "modality": "Brazil",
+          "modality": "Greater São Paulo, Brazil",
           "role": "Full Stack Developer",
           "period": "Dec 2016 – Jun 2017",
           "duration": "7 mos",
           "highlights": [
-            "Editorial maintenance team. Troubleshooter ensuring 24/7 uptime for editorial publishing."
+            "Maintained high-scale editorial web platforms, diagnosing and resolving production incidents across mission-critical publishing systems."
           ],
-          "tech": ["AngularJS", "HTML", "CSS", "jQuery"]
+          "tech": ["JavaScript", "AngularJS", "HTML5", "CSS3"]
         },
         {
           "id": "upwell",
           "company": "Upwell",
-          "modality": "Freelance",
-          "role": "Senior System Analyst / Tech Lead",
-          "period": "Jul 2016 – Nov 2016",
-          "duration": "5 mos",
+          "modality": "Greater São Paulo, Brazil",
+          "role": "Tech Lead Full Stack (Freelancer)",
+          "period": "Jul 2016 – Dec 2016",
+          "duration": "6 mos",
           "highlights": [
-            "Led UX and backend development for a medical app.",
-            "Organized Agile/Scrum ceremonies."
+            "Led backend architecture (Lumen, Node.js, Elasticsearch, MongoDB, Socket.io), UX technical flows, and Scrum ceremonies for an on-demand telemedicine platform, alongside hybrid mobile development (Ionic) and unit testing."
           ],
-          "tech": ["Lumen", "MongoDB", "Socket.io", "Node.js", "ElasticSearch", "Scrum"]
+          "tech": ["PHP", "Lumen", "Node.js", "MongoDB", "Elasticsearch", "Socket.io", "Ionic", "Scrum"]
         },
         {
           "id": "digitalbox",
@@ -214,6 +216,21 @@
             "Data Engineering with Python (Pandas, Scikit-Learn), advanced SQL queries (PostgreSQL), and Exploratory Data Analysis (EDA) for strategic insights.",
             "Data-Driven Apps (building interactive frontends with Streamlit), Prompt Engineering, AI Model Life Cycle, and LangChain."
           ]
+        }
+      ]
+    },
+    "languages": {
+      "title": "Languages",
+      "items": [
+        {
+          "id": "portuguese",
+          "name": "Portuguese",
+          "level": "Native"
+        },
+        {
+          "id": "english",
+          "name": "English",
+          "level": "B2/C1 — Upper-Intermediate / Advanced (EF SET 58/100: B2 Reading, C1 Listening; 5+ years working on remote English-speaking engineering teams)"
         }
       ]
     },

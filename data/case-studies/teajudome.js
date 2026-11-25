@@ -77,7 +77,7 @@ export const teajudome = {
             "Technical session with Valessio Brito and specialists linked to FAO and WFP.",
         },
         {
-          src: "/images/projects/teajudome/mobile-map-sp.PNG",
+          src: "/images/projects/teajudome/mobile-map-sp.png",
           alt: "Greater São Paulo production mobile map",
           caption:
             "Production mobile map in Greater São Paulo (124+ volunteers and 70+ small businesses).",
@@ -89,13 +89,13 @@ export const teajudome = {
             "Featured on Mapbox's official blog (Creativity and Compassion in COVID-19).",
         },
         {
-          src: "/images/projects/teajudome/hotjar-heatmap.PNG",
+          src: "/images/projects/teajudome/hotjar-heatmap.png",
           alt: "Hotjar tap heatmap",
           caption:
             "Hotjar tap heatmap uncovering dead clicks on non-interactive elements to guide UX improvements.",
         },
         {
-          src: "/images/projects/teajudome/mobile-list-filters.PNG",
+          src: "/images/projects/teajudome/mobile-list-filters.png",
           alt: "Mobile list with radius and delivery filters",
           caption:
             "Mobile-first list view with radius filters (10–100 km) and delivery options.",

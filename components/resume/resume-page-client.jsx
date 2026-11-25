@@ -12,6 +12,7 @@ import { ResumeOverview } from "@/components/resume/resume-overview";
 import { ResumeExperienceSection } from "@/components/resume/resume-experience-section";
 import { ResumeEducationSection } from "@/components/resume/resume-education-section";
 import { ResumeCertificationsSection } from "@/components/resume/resume-certifications-section";
+import { ResumeLanguagesSection } from "@/components/resume/resume-languages-section";
 
 export function ResumePageClient() {
   const t = useTranslations("resume");
@@ -56,6 +57,11 @@ export function ResumePageClient() {
     items: t.raw("certifications.items"),
   };
 
+  const languages = {
+    title: t("languages.title"),
+    items: t.raw("languages.items"),
+  };
+
   return (
     <div className="mx-auto w-full max-w-7xl px-6 py-12 md:py-16">
       <ResumeMobileNav
@@ -94,6 +100,11 @@ export function ResumePageClient() {
             sectionId="education"
             title={education.title}
             items={education.items}
+          />
+          <ResumeLanguagesSection
+            sectionId="languages"
+            title={languages.title}
+            items={languages.items}
           />
           <ResumeCertificationsSection
             sectionId="certifications"
